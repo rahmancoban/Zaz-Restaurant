@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../ZazRestaurant/images/nut.jpg');
+    height: 800px;
+    background-size:cover ;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-family: 'Yesteryear', cursive;
+    font-size: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.nav-menu{
+    list-style: none;
+}
+
+.nav-menu li{
+    display: inline-block;
+    color: white;
+    font-size: 25;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-menu li a:hover{
+    color: chocolate;
+    transition: all 0.3s;
+}
+
+.header-title-1{
+    color: rgb(197, 136, 23);
+    font-size: 60px;
+    font-family: 'Rochester', cursive;
+    margin-top: 140px;
+    margin-bottom: 15px;
+    
+}
+
+.header-title-2{
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 7px;
+    margin-bottom: 25px;
+
+}
+
+.header-cta-1{
+    color: white;
+    background-color: rgb(226, 168, 60);
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.header-cta-1:hover{
+    background-color: chocolate;
+}
+
+.search{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.bag{
+    font-size: 25px;
+}
+
+
+/************Discover Section**********/
+
+.discover{
+    background-color: rgb(223, 238, 252);
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+.food1{
+    height: 400px;
+    width: 240px;
+    background-image: url('../ZazRestaurant/images/kebab.jpg');
+    background-size: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.67);
+    
+}
+
+.food1:hover{
+    opacity: 0.7;
+}
+
+.food2:hover{
+    opacity: 0.7;
+}
+
+.food3:hover{
+    opacity: 0.7;
+}
+
+
+.food2{
+    height: 400px;
+    width: 240px;
+    background-image: url('../ZazRestaurant/images/pasta.jpg');
+    background-size: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.67);
+}
+
+.food3{
+    height: 400px;
+    width: 240px;
+    background-image: url('../ZazRestaurant/images/hamburger.jpg');
+    background-size: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.67);
+    
+}
+
+
+/************Specialities Section**********/
+
+.spe1{
+    font-family: 'Indie Flower', cursive;
+    color: rgb(206, 135, 28);
+    font-size: 34px;
+}
+
+.spe2{
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 100px;
+}
+
+.specialitis-middle{
+    text-align: center;
+}
+
+.specialities{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../ZazRestaurant/images/bigtable.jpg');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.specialities-col{
+    width: 350px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.specialities-image1,
+.specialities-image2,
+.specialities-image3 {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+}
+
+.specialities-image1{
+    background-image: url('../ZazRestaurant/images/breakfast.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.specialities-image1:hover .overlay{
+    opacity: 1;
+}
+
+
+.specialities-image2{
+    background-image: url('../ZazRestaurant/images/lunch.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.specialities-image2:hover .overlay{
+    opacity: 1;
+}
+
+
+
+.specialities-image3{
+    background-image: url('../ZazRestaurant/images/dinner.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.specialities-image3:hover .overlay{
+    opacity: 1;
+}
+
+.specialities-row{
+    display: flex;
+    justify-content: center;
+}
+
+.breakfast{
+    font-family: 'Mate SC', serif;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.lunch{
+    font-family: 'Mate SC', serif;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+}
+
+.dinner{
+    font-family: 'Mate SC', serif;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+.overlay{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(238, 168, 77, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+.frame{
+    border: 3px solid rgb(253, 159, 16);
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Mate SC', serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+
+
+/************Special Menu Section**********/
+
+
+.special-menu-section{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+
+.special-menu-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.special-menu-h1{
+    font-family: "Rochester", cursive;
+    color: #f2ac32;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.special-menu-h2{
+    color: #000;
+    margin-bottom: 50px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+}
+
+.special-menu-h3{
+    width: 100%;
+    font-family: "Rochester", cursive;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.separator,
+.separator-orange{
+    display: inline-block;
+    width: 40px;
+    border-bottom: 2px solid white;
+    margin: 15px auto;
+
+}
+
+.special-menu-h4{
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.special-menu-p{
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.special-menu-col{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.col-large{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.col-large-1,
+.col-large-3{
+    background-color: #f2ac32;
+    color: #f0f0f0;
+    justify-content: center;
+
+}
+
+.fa-ice-cream,
+.fa-utensils-alt{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.col-large-2{
+    background-image: url('../ZazRestaurant/images/ice-cream.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.col-large-4{
+    background-image: url('../ZazRestaurant/images/eggplant.jpg');
+    background-size: cover;
+}
+
+.fa-utensils-alt{
+    color:  #f2ac32;
+    font-size: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.col-small{
+    width: 50%;
+    height: 225px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.col-small-1{
+    background-color: white;
+}
+
+.col-small-2{
+    background-image: url('../ZazRestaurant/images/chicken.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.col-small-3{
+    background-image: url('../ZazRestaurant/images/pizza.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.col-small-4{
+    background-image: url('../ZazRestaurant/images/eastbreakfast.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.col-small-5{
+    background-image: url('../ZazRestaurant/images/kadayif.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.col-small-h3{
+    width: 100%;
+    font-family: "Rochester", cursive;
+    font-size: 23px;
+    letter-spacing: 2px;
+    color:  #f2ac32;
+}
+
+.col-small-h4,
+.col-small-h5{
+    width: 100%;
+    color: black;
+    letter-spacing: 3px;
+    font-family: "Oswald", sans-serif;
+}
+
+.col-small-h5{
+    color:  #f2ac32;
+    margin-top: 10px;
+}
+
+.separator-orange{
+    border-bottom: 3px solid #f2ac32;
+}
+
+
+
+
+
+
+/************Special Menu Section**********/
+
+
+.our-menu-section{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../ZazRestaurant/images/ourmenu.jpg');;
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 150px;
+}
+
+.our-menu-h1{
+    font-family: "Rochester", cursive;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.our-menu-h2{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+}
+
+.food-container{
+    color: white;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.our-menu-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.our-menu-col{
+    width: 40%;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.food-title{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.food-price{
+    font-size: 16px;
+    color:  #f2ac32;
+    font-family: "Oswald", sans-serif;
+}
+
+.food-ingredients{
+    font-size: 12px;
+}
+
+.button{
+    margin-top: 80px;
+}
+
+.our-menu-button{
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.our-menu-button:hover{
+    background-color: tomato;
+    color: black;
+    padding: 5px 10px;
+}
+
+
+
+/************Booking Table Section**********/
+
+
+
+.booking-table-section{
+    padding: 100px;
+    text-align: center;
+}
+
+.booking-table-h1{
+    font-family: "Rochester", cursive;
+    color:  #f2ac32;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.booking-table-h2{
+    color: black;
+    margin-bottom: 50px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+}
+
+.booking-table-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking{
+    background-color: rgb(243, 235, 235);
+    margin: 30px 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.booking-icon{
+    display: inline-block;
+    padding: 15px;
+    border-right: 1px solid black;
+}
+
+.booking-data{
+    padding: 0px 30px 0px 18px;
+
+}
+
+.cta{
+    background-color: #f2ac32;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.cta:hover{
+    background-color: tomato;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+
+/************Footer Section**********/
+
+footer{
+    padding: 80px 100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../ZazRestaurant/images/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.footer-title{
+    font-family: "Oswald", sans-serif;
+    color:  #f2ac32;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    margin: 30px 50px;
+}
+
+.footer-text{
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.footer-email{
+    padding: 10px 18px ;
+    width: 190px;
+    height: 45px;
+}
+
+.footer-subscribe{
+    display: inline-block;
+    width: 190px;
+    color: white;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    background-color: #f2ac32;
+    height: 45px;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.copright{
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 150px;
+
+}
